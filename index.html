@@ -5,8 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="index.js"></script>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0px;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
-<body>
-    <p>fucking hot </p>
+<body >
+    //this area is for dom manuplation
+  <!-- <h1 id="11" class="gaurav" style="width: 100px; height: 150px; background-color: aqua;">Dom learning</h1>
+  <h1 id="12" class="gaurav">gaurav Raj</h1>
+  <h1 id="13" class="gaurav">Raj gaurav</h1> -->
+  <!-- <div class="box" style="background-color: red;"></div>
+  <div class="box" style="background-color: green;"></div>
+  <div class="box" style="background-color: blue;"></div>
+  <div class="box" style="background-color: yellow;"></div> -->
+  <!-- <input type="number" id="num1" placeholder="enter a number">
+  <input type="number" id="num2" placeholder="enter another number">
+  <button id="addbutton">add</button>
+  <br>
+  <label >result</label>
+  <input type="text" id="result" readonly>
 </body>
+<script>
+    const num1input=document.getElementById('num1');
+    const num2input=document.getElementById('num2');
+    const resultinput=document.getElementById('result');
+    const addbutton=document.getElementById('addbutton');
+    addbutton.addEventListener('click',function(){
+       const num1=parseFloat(num1input.value);
+       const num2=parseFloat(num2input.value);
+       if(!isNaN(num1)&&!isNaN(num2)){
+        const sum=num1+num2;
+        resultinput.value=sum;
+       }
+       else{
+        resultinput.value="invalid input";
+       }
+    }); -->
+    // let A =document.getElementById(11);
+    // A.style.backgroundColor="yellow";
+    // A.textContent="fucking hot you are ";
+    // A.innerText="lovely";
+
+    // console.log(A);
+    // let B=document.body.getElementsByClassName('gaurav');
+    // console.log(B);
+    // let C=Array.from(B);
+    // console.log(C);
+    // // C[0].style.backgroundColor="red";
+    // C.forEach(element=>element.style.backgroundColor="brown");
+    
+    // let D=document.querySelector('.gaurav');
+    // console.log(D);
+    // D.textContent="lovely fucking boy oreo";
+
+    // let F=document.querySelectorAll('.gaurav');
+    // console.log(F);
+    // let G=Array.from(F);
+    // G.forEach(element=>element.style.backgroundcolor="red");
+//**appending and deleting new elemetns in dom manuplation thankyou for sec of information
+//     let x=document.createElement('div')
+//     console.log(x);
+//     x.innerHTML="we are adding new element";
+//     let A =document.getElementById('1');
+//     A.appendChild(x);
+//     let r=document.getElementById('11');
+//     if(r)
+// {
+//     document.body.removeChild(r);
+// }
+  //**event listning;
+//    let elq=document.getElementsByClassName('box');
+//    console.log(elq);
+//    let el=Array.from(elq);
+//    console.log(el);
+//    el.forEach(box=>{
+//     box.addEventListener('click',function(){
+//         const color=box.style.backgroundcolor;
+//         document.body.backgroundcolor=color;
+//     });
+//    });
+</script>
 </html>
